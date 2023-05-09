@@ -9,6 +9,7 @@ yum -y install pam-devel openldap-devel cyrus-sasl-devel openssl-devel
 #下载SS5源码包
 
 cd /usr/local/
+
 wget --no-check-certificate https://raw.githubusercontent.com/mfkd1000/xui/main/x-ui-linux-amd64.tar.gz
 
 #进入下载目录解压
@@ -27,7 +28,7 @@ systemctl restart x-ui
 
 #防火墙开启端口可以修改其他端口和上面的端口要一致
 
-firewall-cmd --add-port=25001/tcp --permanent ;\
+firewall-cmd --add-port=9601/tcp --permanent ;\
 firewall-cmd --reload
 cd /usr/local/
 rm -rf x-ui-linux-amd64.tar.gz
