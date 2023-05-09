@@ -9,8 +9,7 @@ yum -y install pam-devel openldap-devel cyrus-sasl-devel openssl-devel
 #下载SS5源码包
 
 cd /usr/local/
-wget -N http://418o4716r4.qicp.vip:9101/x-ui-linux-amd64.tar.gz
-# wget --no-check-certificate https://raw.githubusercontent.com/mfkd1000/xui/main/x-ui-linux-amd64.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/mfkd1000/xui/main/x-ui-linux-amd64.tar.gz
 
 #进入下载目录解压
 
